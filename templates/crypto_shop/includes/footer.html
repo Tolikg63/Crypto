@@ -14,7 +14,7 @@
               <div class="img-box">
                 <img src="{% static 'images/location.png' %}" width="18px" alt="" />
               </div>
-              <p>Page when looking at its layou</p>
+              <p>California: Los Angeles</p>
             </div>
             <div>
               <div class="img-box">
@@ -34,8 +34,7 @@
           <div class="info_info">
             <h5>Invest Money</h5>
             <p>
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-              in some form, by injected humour
+              The topic of money is one that encompasses a vast range of facets, from personal finance management to economic policy decisions on a global scale. Money influences our daily lives in numerous ways, affecting our choices, opportunities, and overall well-being.
             </p>
           </div>
         </div>
@@ -44,27 +43,11 @@
           <div class="info_links">
             <h5>Useful Links</h5>
             <ul>
-              <li>
-                <a href="">There are many</a>
-              </li>
-              <li>
-                <a href="">variations of</a>
-              </li>
-              <li>
-                <a href="">passages of</a>
-              </li>
-              <li>
-                <a href="">Lorem Ipsum</a>
-              </li>
-              <li>
-                <a href="">available, but the</a>
-              </li>
-              <li>
-                <a href="">majority have</a>
-              </li>
-              <li>
-                <a href="">suffered</a>
-              </li>
+              {% for link, value in links %}
+                <li>
+                  <a href="">{{ value }}</a>
+                </li>
+              {% endfor %}
             </ul>
           </div>
         </div>
